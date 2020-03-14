@@ -24,6 +24,11 @@ persist.vendor.cne.feature=1
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
+# Enable blurs, hidden under dev option
+ro.surface_flinger.supports_background_blur=1
+persist.sys.sf.disable_blurs=1
+ro.sf.blurs_are_expensive=1
+
 # Graphics
 ro.surface_flinger.protected_contents=true
 debug.cpurend.vsync=false
