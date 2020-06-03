@@ -70,3 +70,7 @@ sys.display-size=1920x1080
 vendor.video.disable.ubwc=1
 ro.vendor.qti.sys.fw.bservice_enable=true
 ro.vendor.qti.am.reschedule_service=true
+
+# Zygote preforking
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.device_config.runtime_native.usap_pool_enabled=true
