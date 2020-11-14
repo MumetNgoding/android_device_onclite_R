@@ -1,4 +1,6 @@
 typeattribute system_server system_executes_vendor_violators;
+allow system_server proc_touchpanel:dir r_dir_perms;
+allow system_server proc_touchpanel:file rw_file_perms;
 
 # Input devices
 r_dir_file(system_server, idc_file);
@@ -9,3 +11,7 @@ get_prop(system_server, fp_prop);
 
 # Smart charging
 allow system_server sysfs_battery_supply:file { getattr open read write };
+
+allow system_server exported_camera_prop:file { read open getattr };
+allow system_server userspace_reboot_config_prop:file { read open getattr };
+allow system_server userspace_reboot_exported_prop:file { read open getattr };
