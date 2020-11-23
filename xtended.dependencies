@@ -2,5 +2,11 @@
 {
    "repository": "android_kernel_xiaomi_onclite",
    "target_path": "kernel/xiaomi/onclite"
+ },
+   { 
+   "remote":       "github",
+   "repository":   "silont-project/silong-clang",
+   "target_path":  "prebuilts/clang/host/linux-x86/clang-11.0",
+   "revision":     "master"
  }
 ]
