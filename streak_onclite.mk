@@ -13,10 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/onclite/device.mk)
 
 # GAPPS included
-$(call inherit-product-if-exists, vendor/gapps/config.mk)
+#$(call inherit-product-if-exists, vendor/gapps/config.mk)
 
-# Inherit some common RevengeOS stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
+# Inherit some common StreakOS stuff.
+$(call inherit-product, vendor/streak/config/common.mk)
 
 #Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
@@ -25,7 +25,7 @@ TARGET_BOOT_ANIMATION_RES := 720
 TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := revengeos_onclite
+PRODUCT_NAME := streak_onclite
 PRODUCT_DEVICE := onclite
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 7
