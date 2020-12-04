@@ -16,7 +16,7 @@ $(call inherit-product, device/xiaomi/onclite/device.mk)
 #$(call inherit-product-if-exists, vendor/gapps/config.mk)
 
 # Inherit some common StreakOS stuff.
-$(call inherit-product, vendor/streak/config/common.mk)
+$(call inherit-product, vendor/streak/config/common_full_phone.mk)
 
 #Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
