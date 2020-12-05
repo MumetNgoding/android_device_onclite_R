@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 typeattribute system_server system_executes_vendor_violators;
 
 # Input devices
@@ -9,3 +10,22 @@ get_prop(system_server, fp_prop);
 
 # Smart charging
 allow system_server sysfs_battery_supply:file { getattr open read write };
+=======
+allow system_server vendor_keylayout_file:dir r_dir_perms;
+allow system_server vendor_keylayout_file:file r_file_perms;
+allow system_server lirc_device:chr_file rw_file_perms;
+allow system_server spidev_device:chr_file rw_file_perms;
+allow system_server sysfs_rtc:file r_file_perms;
+allow system_server touch_sysfs:file r_file_perms;
+allow system_server init:binder { call };
+allow system_server userspace_reboot_exported_prop:file { read };
+allow system_server userspace_reboot_exported_prop:file { open };
+allow system_server userspace_reboot_exported_prop:file { getattr };
+allow system_server userspace_reboot_config_prop:file { read };
+allow system_server userspace_reboot_config_prop:file { open };
+allow system_server userspace_reboot_config_prop:file { getattr };
+allow system_server proc:file { read };
+allow system_server proc:file { open };
+allow system_server proc:file { getattr };
+get_prop(system_server, persist_camera_prop);
+>>>>>>> 636d1ea7e... riva: sepolicy: Address more denials

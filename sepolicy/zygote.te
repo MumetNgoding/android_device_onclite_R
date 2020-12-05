@@ -1,3 +1,5 @@
 allow zygote zygote:capability { kill };
 allow zygote device:file { open write };
-allow zygote exported_camera_prop:file { read open getattr };
+allow zygote exported_camera_prop:file { read };
+allow zygote exported_camera_prop:file { open };
+allow zygote exported_camera_prop:file { getattr };

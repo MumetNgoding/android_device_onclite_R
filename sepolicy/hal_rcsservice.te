@@ -1,0 +1,2 @@
+allow hal_rcsservice system_app:binder { call };
+allow hal_rcsservice system_app:binder { transfer };
