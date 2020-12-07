@@ -1,2 +1,0 @@
-set_prop(vendor_dpmd, ctl_stop_prop)
-allow vendor_dpmd vendor_dpmd:capability { sys_admin };
