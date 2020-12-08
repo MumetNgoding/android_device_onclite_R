@@ -26,8 +26,6 @@ allow untrusted_app_29 init_exec:file { open read getattr };
 allow untrusted_app_29 init_exec:lnk_file { open read getattr };
 allow untrusted_app_29 linkerconfig_file:dir { open read getattr };
 allow untrusted_app_29 proc_net_tcp_udp:file { open read getattr };
-allow untrusted_app_29 cpuboost_prop:file { open read getattr };
-allow untrusted_app_29 cpucore_prop:file { open read getattr };
 allow untrusted_app_29 ctl_LKCore_prop:file { open read getattr };
 allow untrusted_app_29 device:dir { open read getattr };
 allow untrusted_app_29 xdsp_device:chr_file { open read getattr };
